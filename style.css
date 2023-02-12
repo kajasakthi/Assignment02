@@ -1,0 +1,217 @@
+    /* .web{
+    float: left;
+    margin-left: 50px;
+  }
+  .kk{
+    float: right;
+    margin-right: 100px;
+  } */
+  #navbarNavDropdown{
+    margin-left :1000px;
+  }
+  .align{
+    text-align:left;
+        padding: 20px;
+        margin: 40px;
+} 
+td{
+    padding: 30px;
+text-align: left;
+} 
+body{
+line-height: 1.5;
+font-family: sans-serif;
+}
+*{
+margin:0;
+box-sizing: border-box;
+}
+
+.row{
+display: flex;
+flex-wrap: wrap;
+/* background-color: rgb(223, 184, 223) ;; */
+}
+img{
+max-width: 100%;
+vertical-align: middle;
+}
+.gallery{
+width: 100%;
+display: block;
+min-height: 100vh;
+/* background-color:rgb(223, 184, 223) ; */
+padding: 100px 0;
+}
+
+.container{
+max-width: 1170px;
+margin:auto;
+}
+.gallery .gallery-filter{
+padding: 0 15px;
+width: 100%;
+text-align: center;
+margin-bottom: 40px;
+}
+.gallery .gallery-filter .filter-item{
+color: black;
+font-size: 17px;
+border: 2px solid white;
+text-transform: uppercase;
+display: inline-block;
+border-radius: 20px;
+margin-right: 8px;
+cursor: pointer;
+padding: 8px 20px 8px 20px;
+line-height: 1.2;
+transition: all 0.3s ease;
+}
+.gallery .gallery-filter .filter-item.active{
+color: black;
+border-color : #16b5ef;
+background: #16b5ef;
+}
+.gallery .gallery-item{
+width: calc(100% / 3);
+padding: 15px;
+
+}
+.gallery .gallery-item-inner img{
+width: 100%;
+border: 3px solid #dce4e4;
+}
+.H1{
+text-align: center;
+
+
+}
+/* .hhrr{
+margin-left: 850px;
+margin-right: 850px;
+color: orangered;
+width: 80px;
+
+} */
+.hhrr{
+  margin-left: 870px;
+  margin-right: 500px;
+  width: 100px;
+  height: 200px;
+  
+}
+h3{
+background-color: rgb(223, 184, 223);
+}
+.foot2{
+padding-left: 1100px;
+}
+._3rd{
+background-color: aqua;
+}
+.samp img{
+float: left;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 10px 14px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+.fa-twitter {
+  background: #55ACEE;
+  color:black
+}
+.fa-facebook {
+  background: #3B5998;
+  color:black;
+}
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.fa-skype {
+  background: #00aff0;
+  color: white;
+}
+
+.carousel{
+  width: 400px;
+  height: 221px;
+  background-position: center;
+  background-size: cover;
+  background-image: url(image2/house1.jpeg);
+}
+.fade{
+  -webkit-animation: 1.5s fade;
+  animation: 1.5s fade;
+}
+  @-webkit-keyframes fade{
+    from{opacity: 0.4;}
+      to{opacity: 1}
+  }
+  @keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+  }
+
+  /* //pageloader  */
+  #loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;
+    margin: -76px 0 0 -76px;
+    border: 16px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 16px solid #3498db;
+    -webkit-animation: spin 2s linear infinite;
+    animation: spin 2s linear infinite;
+  }
+  
+  @-webkit-keyframes spin {
+    0% { -webkit-transform: rotate(0deg); }
+    100% { -webkit-transform: rotate(360deg); }
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  
+  .animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+  }
+  
+  @-webkit-keyframes animatebottom {
+    from { bottom:-100px; opacity:0 } 
+    to { bottom:0px; opacity:1 }
+  }
+  /* //animation use to  */
+  @keyframes animatebottom { 
+    from{ bottom:-100px; opacity:0 } 
+    to{ bottom:0; opacity:1 }
+  }
+  
+  #myDiv {
+    display: none;
+    text-align: center;
+  }
