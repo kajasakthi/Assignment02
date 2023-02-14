@@ -26,73 +26,16 @@ font-family: sans-serif;
 margin:0;
 box-sizing: border-box;
 }
-
-.row{
-display: flex;
-flex-wrap: wrap;
-/* background-color: rgb(223, 184, 223) ;; */
-}
-img{
-max-width: 100%;
-vertical-align: middle;
-}
 .gallery{
-width: 100%;
-display: block;
-min-height: 100vh;
-/* background-color:rgb(223, 184, 223) ; */
-padding: 100px 0;
+  text-align: center;
+}
+.heading{
+  text-align: center;
+}
+.hhhh{
+  text-align: center;
 }
 
-.container{
-max-width: 1170px;
-margin:auto;
-}
-.gallery .gallery-filter{
-padding: 0 15px;
-width: 100%;
-text-align: center;
-margin-bottom: 40px;
-}
-.gallery .gallery-filter .filter-item{
-color: black;
-font-size: 17px;
-border: 2px solid white;
-text-transform: uppercase;
-display: inline-block;
-border-radius: 20px;
-margin-right: 8px;
-cursor: pointer;
-padding: 8px 20px 8px 20px;
-line-height: 1.2;
-transition: all 0.3s ease;
-}
-.gallery .gallery-filter .filter-item.active{
-color: black;
-border-color : #16b5ef;
-background: #16b5ef;
-}
-.gallery .gallery-item{
-width: calc(100% / 3);
-padding: 15px;
-
-}
-.gallery .gallery-item-inner img{
-width: 100%;
-border: 3px solid #dce4e4;
-}
-.H1{
-text-align: center;
-
-
-}
-/* .hhrr{
-margin-left: 850px;
-margin-right: 850px;
-color: orangered;
-width: 80px;
-
-} */
 .hhrr{
   margin-left: 870px;
   margin-right: 500px;
@@ -210,8 +153,83 @@ float: left;
     from{ bottom:-100px; opacity:0 } 
     to{ bottom:0; opacity:1 }
   }
+
   
-  #myDiv {
-    display: none;
-    text-align: center;
+  
+   /* gallary filter */
+   * {
+    box-sizing: border-box;
   }
+  
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+  }
+  
+  .row {
+    margin: 10px -16px;
+  }
+  
+  /* Add padding BETWEEN each column */
+  .row,
+  .row > .column {
+    padding: 8px;
+  }
+  
+  /* Create three equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 33.33%;
+    display: none; /* Hide all elements by default */
+  }
+  
+  /* Clear floats after rows */ 
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: white;
+    padding: 10px;
+  }
+  
+  /* The "show" class is added to the filtered elements */
+  .show {
+    display: block;
+  }
+  
+  /* Style the buttons */
+  .btn {
+    border: none;
+    outline: none;
+    padding: 12px 16px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .btn:hover {
+    background-color: #ddd;
+  }
+  
+  .btn.active {
+    background-color: #666;
+    color: white;
+  }
+   
+  
+ 

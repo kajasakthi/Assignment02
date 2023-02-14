@@ -8,44 +8,44 @@ function decrease(){
 }
 
 //filter galler 
-const buttons = document.querySelectorAll(".gallery-filter");
-const boxes = document.querySelectorAll(".gallery-item-inner");
+// const buttons = document.querySelectorAll(".gallery-filter");
+// const boxes = document.querySelectorAll(".gallery-item-inner");
 
-buttons.forEach((button)=> {
-    button.classList.remove('active');
-});
-buttons[0].classList.add('active');
-buttons.forEach((button)=>{
-    button.addEventListener('click',(e)=>{
-     e.preventDefault();
-     setActiveBtn(e);
-     const btnfilter = e.target.dataset.filter;
+// buttons.forEach((button)=> {
+//     button.classList.remove('active');
+// });
+// buttons[0].classList.add('active');
+// buttons.forEach((button)=>{
+//     button.addEventListener('click',(e)=>{
+//      e.preventDefault();
+//      setActiveBtn(e);
+//      const btnfilter = e.target.dataset.filter;
 
-     boxes.forEach((box => {
-        if(btnfilter == 'all'){
-            box.style.display = 'block';
-        }else{
-            const boxfilter = box.dataset.item;
-            if(btnfilter == boxfilter){
-                box.style.display="block";
+//      boxes.forEach((box => {
+//         if(btnfilter == 'all'){
+//             box.style.display = 'block';
+//         }else{
+//             const boxfilter = box.dataset.item;
+//             if(btnfilter == boxfilter){
+//                 box.style.display="block";
 
-            }else{
-                box.style.display='none';
-            }
+//             }else{
+//                 box.style.display='none';
+//             }
         
-        }
+//         }
 
      
-     }));
-    });
-});
-function setActiveBtn(e){
-    buttons.forEach((buttons) =>{
-        buttons.classList.remove('active')
+//      }));
+//     });
+// });
+// function setActiveBtn(e){
+//     buttons.forEach((buttons) =>{
+//         buttons.classList.remove('active')
     
-    });
-    e.target.classList.add('active');
-}
+//     });
+//     e.target.classList.add('active');
+// }
 // end filter gallary
 
 
@@ -83,4 +83,9 @@ function showPage() {
   document.getElementById("loader").style.display = "none";
   document.getElementById("myDiv").style.display = "block";
 }
-    
+function openNew(){
+    newwin= window.open('map.html')
+}
+
+// page 2 caurosal
+
