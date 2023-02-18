@@ -70,6 +70,28 @@ img {
   color: white;
 }
 
+.carousel{
+  border: 5px solid;
+  width:400px;
+  
+  background-position: center;
+  background-size: cover;
+  background-image: url(image2/house1.jpeg);
+}
+.fade{
+  -webkit-animation: 1.5s fade;
+  animation: 1.5s fade;
+}
+  @-webkit-keyframes fade{
+    from{opacity: 0.4;}
+      to{opacity: 1}
+  }
+  @keyframes fade{
+    from{opacity: 0.4}
+    to{opacity: 1}
+  }
+  
+
 </style>
 <body>
     <section class="section1">
@@ -145,7 +167,8 @@ img {
     </section>
       <section class="samp">
         <div class="d-flex justify-content-center bg-white mb-3">
-          <div class="p-2 bg-white"><img src="image2/house1.jpeg" alt="house" style="width:400px;height:500px;margin-right:10; margin-top: 100px;"></div>
+          <div class="carousel fade" style="width: 600px; height: 500px; margin-right: 10px;"></div>
+           <!-- <div class="p-2 bg-white"><img src="image2/house1.jpeg" alt="house" style="width:400px;height:500px;margin-right:10; margin-top: 100px;"></div>  -->
           <div class="p-2 bg-white"><div class="card text-dark bg-light mb-3" style="max-width: 18rem;">
             <div class="card-header">Project information</div>
             <div class="card-body">
@@ -185,6 +208,22 @@ img {
         </section>
       
     </section><br>
+    <script>
+      const images = ["image2/house1.jpeg","image2/house2.jpeg","image2/house3.jpeg"];
+const carousel = document.querySelector(".carousel");
+const interval = setInterval(function(){
+    startCarousel();
+},3000);
+var index = 1;
+
+startCarousel = () =>{
+    carousel.style.backgroundImage = `url(${images[index++]})`;
+    carousel.classList.remove("fade");
+    void carousel.offsetWidth;
+    carousel.classList.add("fade");
+    if(index > images.length-1) index = 0;
+}
+    </script>
       <script src="bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
